@@ -16,15 +16,20 @@
             <div>
                 
                 <label for="firstname">Your First Name</label>
-                <input class="required-field" type="text" id="firstname" name="firstname" required>
+                <input class="required-field" type="text" id="firstname" name="firstname" required minlength="2" maxlength="35">
                 <label for="lastname">Last name</label>
-                <input class="required-field" type="text" id="lastname" name="lastname" required>
+                <input class="required-field" type="text" id="lastname" name="lastname" required minlength="2" maxlength="35">
+                <div>
+                <label for="age">Your Age</label>
+                <input type="number" name="age" id="age" min="21" max="120">
+                <h5> Must be 21 or older to enter the contest</h5>
+                </div>
             </div>
             <div>
                 <fieldset>
                     <legend>Your Contact Info</legend> 
                 <label for="youremail">Your Email</label>
-                <input class="required-field" type="text" id="youremail" name="youremail" required>
+                <input class="required-field" type="email" id="youremail" name="youremail" required>
                 <label for="streetaddress">Street Address</label>
                 <input for="text" id="streetaddress" name="streetaddress">
                 <Label for="city">City</Label>
@@ -84,7 +89,7 @@
                 </div>
                 </select>
                 <label for="zip">Zip</label>
-                <input type="'text" id="zip" name="zip">
+                <input type="number" id="zip" name="zip">
                 </fieldset>
             </div>
             <div>
